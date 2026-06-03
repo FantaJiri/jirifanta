@@ -1,29 +1,72 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Why } from "@/components/site/Why";
+import { Services } from "@/components/site/Services";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Gallery } from "@/components/site/Gallery";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { FloatingCTA } from "@/components/site/FloatingCTA";
+import { Toaster } from "@/components/ui/sonner";
+import { useReveal } from "@/hooks/useReveal";
+
+const title = "Jiří Fanta — Sportovní masáže Brno | Regenerace a výkon";
+const description =
+  "Sportovní masáže od Jiřího Fanty. 6+ let praxe se sportovci Dukly Brno a olympioniky. Regenerace, příprava na závod, masáž po výkonu.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Jiří Fanta — Sportovní masáže",
+          description,
+          telephone: "+420777123456",
+          email: "info@jirifanta.cz",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Příkladná 123",
+            addressLocality: "Brno",
+            addressCountry: "CZ",
+          },
+          url: "https://jirifanta.cz",
+        }),
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  useReveal();
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen bg-background text-foreground">
+      <Navbar />
+      <Hero />
+      <About />
+      <Why />
+      <Services />
+      <Testimonials />
+      <Gallery />
+      <Contact />
+      <Footer />
+      <FloatingCTA />
+      <Toaster theme="dark" position="top-center" />
+    </main>
   );
 }
