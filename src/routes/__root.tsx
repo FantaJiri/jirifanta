@@ -83,6 +83,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Jiří Fanta — Sportovní masáže" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Jiří Fanta — Sportovní masáže" },
+      { name: "twitter:title", content: "Jiří Fanta — Sportovní masáže" },
+      { property: "og:description", content: "Sportovní masáže pro rychlejší regeneraci a lepší výkon." },
+      { name: "twitter:description", content: "Sportovní masáže pro rychlejší regeneraci a lepší výkon." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7858c040-19e6-4866-ae1f-a59c3f4b68a1/id-preview-69c5dc41--d2d650f6-05a1-40de-a09a-0e4e8fd2807b.lovable.app-1780508380874.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7858c040-19e6-4866-ae1f-a59c3f4b68a1/id-preview-69c5dc41--d2d650f6-05a1-40de-a09a-0e4e8fd2807b.lovable.app-1780508380874.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
