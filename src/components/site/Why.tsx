@@ -1,7 +1,7 @@
 import { Award, Trophy, UserCheck, Activity, Sparkles, Home } from "lucide-react";
 
 const items = [
-  { icon: Trophy, title: "6+ let zkušeností", text: "Dlouholetá praxe se sportovci na nejvyšší úrovni." },
+  { icon: Trophy, title: "7+ let zkušeností", text: "Dlouholetá praxe se sportovci na nejvyšší úrovni." },
   { icon: Award, title: "Zkušenosti s olympioniky", text: "Spolupráce s účastníky olympijských her a reprezentací ČR." },
   { icon: UserCheck, title: "Individuální přístup", text: "Každé tělo je jiné — masáž přizpůsobím vašim potřebám." },
   { icon: Activity, title: "Sportovní specializace", text: "Zaměření na výkon, regeneraci a prevenci zranění." },
