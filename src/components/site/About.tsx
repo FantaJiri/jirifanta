@@ -21,12 +21,12 @@ export function About() {
         <div className="reveal">
           <p className="text-xs uppercase tracking-[0.25em] text-primary">O mně</p>
           <h2 className="mt-4 text-3xl md:text-5xl font-bold leading-tight">
-            Více než 6 let zkušeností s vrcholovým sportem
+            Více než 7 let zkušeností s vrcholovým sportem
           </h2>
           <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
             <p>
               Jmenuji se <span className="text-foreground font-medium">Jiří Fanta</span> a již
-              více než 6 let působím jako sportovní masér vrcholových sportovců.
+              více než 7 let působím jako sportovní masér vrcholových sportovců.
             </p>
             <p>
               Měl jsem možnost spolupracovat s reprezentanty České republiky a sportovci
