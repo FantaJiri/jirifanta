@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
+import whatsappQr from "@/assets/whatsapp-qr.png";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
@@ -67,6 +68,24 @@ export function Contact() {
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Provozovna</p>
                 <p className="font-medium">Poliklinika Lesná, Halasovo náměstí 597/1, 638 00 Brno – Lesná</p>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-10 flex items-start gap-5">
+            <div className="rounded-2xl bg-white p-3 shadow-sm border border-border">
+              <img
+                src={whatsappQr}
+                alt="QR kód – WhatsApp kontakt Jiří Fanta"
+                className="h-32 w-32 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</p>
+              <p className="font-medium">Naskenujte QR kód</p>
+              <p className="mt-1 text-sm text-muted-foreground max-w-xs">
+                Naskenováním kódu fotoaparátem ve WhatsAppu si mě přidáte do kontaktů.
+              </p>
             </div>
           </div>
         </div>
