@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { toast } from "sonner";
+import whatsappQr from "@/assets/whatsapp-qr.png";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
