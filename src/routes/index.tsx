@@ -12,9 +12,9 @@ import { FloatingCTA } from "@/components/site/FloatingCTA";
 import { Toaster } from "@/components/ui/sonner";
 import { useReveal } from "@/hooks/useReveal";
 
-const title = "Jiří Fanta — Sportovní masáže Brno | Regenerace a výkon";
+const title = "Sportovní masáže Brno — Jiří Fanta | Regenerace";
 const description =
-  "Sportovní masáže od Jiřího Fanty. 6+ let praxe se sportovci Dukly Brno a olympioniky. Regenerace, příprava na závod, masáž po výkonu.";
+  "Sportovní masáže od Jiřího Fanty v Brně. 7+ let praxe se sportovci Dukly Brno a olympioniky. Regenerace, příprava na závod, masáž po výkonu.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,18 +33,42 @@ export const Route = createFileRoute("/")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          name: "Jiří Fanta — Sportovní masáže",
-          description,
-          telephone: "+420733151249",
-          email: "fantajiri@email.cz",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Příkladná 123",
-            addressLocality: "Brno",
-            addressCountry: "CZ",
-          },
-          url: "https://jirifanta.cz",
+          "@graph": [
+            {
+              "@type": "LocalBusiness",
+              "@id": "https://jirifanta.lovable.app/#provozovna-piky",
+              name: "Jiří Fanta — Sportovní masáže (Třída Generála Píky)",
+              description,
+              telephone: "+420733151249",
+              email: "fantajiri@email.cz",
+              image: "https://jirifanta.lovable.app/og-image.png",
+              url: "https://jirifanta.lovable.app/",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Třída Generála Píky 4",
+                postalCode: "613 00",
+                addressLocality: "Brno",
+                addressCountry: "CZ",
+              },
+            },
+            {
+              "@type": "LocalBusiness",
+              "@id": "https://jirifanta.lovable.app/#provozovna-lesna",
+              name: "Jiří Fanta — Sportovní masáže (Poliklinika Lesná)",
+              description,
+              telephone: "+420733151249",
+              email: "fantajiri@email.cz",
+              image: "https://jirifanta.lovable.app/og-image.png",
+              url: "https://jirifanta.lovable.app/",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Halasovo náměstí 597/1",
+                postalCode: "638 00",
+                addressLocality: "Brno – Lesná",
+                addressCountry: "CZ",
+              },
+            },
+          ],
         }),
       },
     ],

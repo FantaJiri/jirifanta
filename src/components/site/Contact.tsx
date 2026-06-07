@@ -100,10 +100,14 @@ export function Contact() {
           </div>
           <Field label="E-mail" name="email" type="email" required />
           <div>
-            <label className="text-xs uppercase tracking-wider text-muted-foreground">
+            <label
+              htmlFor="contact-message"
+              className="text-xs uppercase tracking-wider text-muted-foreground"
+            >
               Zpráva
             </label>
             <textarea
+              id="contact-message"
               name="message"
               required
               rows={5}
@@ -137,10 +141,17 @@ function Field({
   type?: string;
   required?: boolean;
 }) {
+  const id = `contact-${name}`;
   return (
     <div>
-      <label className="text-xs uppercase tracking-wider text-muted-foreground">{label}</label>
+      <label
+        htmlFor={id}
+        className="text-xs uppercase tracking-wider text-muted-foreground"
+      >
+        {label}
+      </label>
       <input
+        id={id}
         name={name}
         type={type}
         required={required}
