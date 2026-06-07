@@ -20,7 +20,7 @@ export function Hero() {
         <div className="max-w-3xl">
           <div className="animate-fade-in inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-widest text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-            6+ let praxe · Dukla Brno · Olympionici
+            7+ let praxe · Dukla Brno · Olympionici
           </div>
 
           <h1 className="animate-fade-up mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05]">
