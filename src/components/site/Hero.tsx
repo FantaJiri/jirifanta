@@ -47,7 +47,7 @@ export function Hero() {
               <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
             </a>
             <a
-              href="tel:+420777123456"
+              href="tel:+420733151249"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur px-7 py-4 font-medium hover:bg-card transition"
             >
               <Phone size={18} />
