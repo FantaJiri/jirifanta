@@ -30,7 +30,8 @@ export function Contact() {
           </p>
 
           <div className="mt-10 space-y-5">
-            <a href="tel:+420777123456" className="flex items-start gap-4 group">
+            <a href="tel:+420733151249" className="flex items-start gap-4 group">
+
               <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary grid place-items-center group-hover:bg-primary group-hover:text-primary-foreground transition">
                 <Phone size={18} />
               </div>
