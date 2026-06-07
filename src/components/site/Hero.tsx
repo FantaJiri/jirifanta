@@ -40,6 +40,13 @@ export function Hero() {
             style={{ animationDelay: "240ms" }}
           >
             <a
+              href="https://wa.me/420733151249"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium shadow-[var(--shadow-glow)] hover:scale-[1.02] transition"
+            >
+              Objednat termín přes Whatsapp
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
+            </a>
+            <a
               href="#kontakt"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium shadow-[var(--shadow-glow)] hover:scale-[1.02] transition"
             >
