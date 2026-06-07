@@ -72,12 +72,17 @@ export function Contact() {
           </div>
 
           <div className="mt-10 flex items-start gap-5">
-            <div className="rounded-2xl bg-white p-3 shadow-sm border border-border">
+            <div className="rounded-2xl bg-white p-3 shadow-sm border border-border shrink-0">
               <img
                 src={whatsappQr}
-                alt="QR kód – WhatsApp kontakt Jiří Fanta"
-                className="h-32 w-32 object-contain"
+                alt="QR kód WhatsApp kontakt Jiří Fanta"
+                width={180}
+                height={180}
+                className="h-[140px] w-[140px] md:h-[180px] md:w-[180px] object-contain block"
                 loading="lazy"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).style.display = "none";
+                }}
               />
             </div>
             <div>
