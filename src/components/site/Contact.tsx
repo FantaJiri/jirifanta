@@ -37,7 +37,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Telefon</p>
-                <p className="font-medium">+420 777 123 456</p>
+                <p className="font-medium">+420 733 151 249</p>
               </div>
             </a>
             <a href="mailto:info@jirifanta.cz" className="flex items-start gap-4 group">
