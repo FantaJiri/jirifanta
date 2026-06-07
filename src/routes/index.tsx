@@ -36,8 +36,8 @@ export const Route = createFileRoute("/")({
           "@type": "LocalBusiness",
           name: "Jiří Fanta — Sportovní masáže",
           description,
-          telephone: "+420777123456",
-          email: "info@jirifanta.cz",
+          telephone: "+420733151249",
+          email: "fantajiri@email.cz",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Příkladná 123",
