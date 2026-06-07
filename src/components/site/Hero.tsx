@@ -58,7 +58,6 @@ export function Hero() {
           <dl className="animate-fade-up mt-16 grid grid-cols-3 gap-6 max-w-lg" style={{ animationDelay: "360ms" }}>
             {[
               { k: "7+", v: "let praxe" },
-              { k: "500+", v: "klientů" },
               { k: "OH", v: "účastníci" },
             ].map((s) => (
               <div key={s.v}>
