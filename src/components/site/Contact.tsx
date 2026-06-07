@@ -40,7 +40,8 @@ export function Contact() {
                 <p className="font-medium">+420 733 151 249</p>
               </div>
             </a>
-            <a href="mailto:info@jirifanta.cz" className="flex items-start gap-4 group">
+            <a href="mailto:fantajiri@email.cz" className="flex items-start gap-4 group">
+
               <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary grid place-items-center group-hover:bg-primary group-hover:text-primary-foreground transition">
                 <Mail size={18} />
               </div>
