@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -9,6 +11,9 @@ const links = [
   { href: "#galerie", label: "Galerie" },
   { href: "#kontakt", label: "Kontakt" },
 ];
+
+const WA_LINK =
+  "https://wa.me/420733151249?text=Dobrý den, chtěl/a bych se objednat na sportovní masáž.";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,7 +44,7 @@ export function Navbar() {
 
         <nav className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
-            <a
+            
               key={l.href}
               href={l.href}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -49,12 +54,23 @@ export function Navbar() {
           ))}
         </nav>
 
-        <a
-          href="#kontakt"
-          className="hidden lg:inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium hover:opacity-90 transition"
-        >
-          Objednat masáž
-        </a>
+        {/* Desktop: WhatsApp + Objednat */}
+        <div className="hidden lg:flex items-center gap-3">
+          
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-[#25D366] text-[#25D366] px-5 py-2.5 text-sm font-medium hover:bg-[#25D366]/10 transition"
+          >
+            WhatsApp
+          </a>
+          
+            href="#kontakt"
+            className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-medium hover:opacity-90 transition"
+          >
+            Objednat masáž
+          </a>
+        </div>
 
         <button
           onClick={() => setOpen((v) => !v)}
@@ -69,7 +85,7 @@ export function Navbar() {
         <div className="lg:hidden border-t border-border bg-card/95 backdrop-blur-md">
           <div className="px-6 py-4 flex flex-col gap-3">
             {links.map((l) => (
-              <a
+              
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
@@ -78,10 +94,20 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a
+            {/* Mobile: WhatsApp + Objednat */}
+            
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="mt-2 inline-flex justify-center rounded-full border border-[#25D366] text-[#25D366] px-5 py-3 text-sm font-medium hover:bg-[#25D366]/10 transition"
+            >
+              WhatsApp
+            </a>
+            
               href="#kontakt"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex justify-center rounded-full bg-primary text-primary-foreground px-5 py-3 text-sm font-medium"
+              className="inline-flex justify-center rounded-full bg-primary text-primary-foreground px-5 py-3 text-sm font-medium"
             >
               Objednat masáž
             </a>
