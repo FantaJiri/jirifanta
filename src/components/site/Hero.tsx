@@ -40,7 +40,7 @@ export function Hero() {
             style={{ animationDelay: "240ms" }}
           >
             <a
-              href="https://wa.me/420733151249"
+              href="https://wa.me/420733151249?text=Dobrý den, chtěl/a bych se objednat na sportovní masáž."
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium shadow-[var(--shadow-glow)] hover:scale-[1.02] transition"
             >
               Objednat termín přes Whatsapp
