@@ -56,7 +56,16 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Provozovna</p>
-                <p className="font-medium">Příkladná 123, Brno</p>
+                <p className="font-medium">Třída Generála Píky 4, 613 00 Brno</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary grid place-items-center">
+                <MapPin size={18} />
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">Provozovna</p>
+                <p className="font-medium">Poliklinika Lesná, Halasovo náměstí 597/1, 638 00 Brno – Lesná</p>
               </div>
             </div>
           </div>
