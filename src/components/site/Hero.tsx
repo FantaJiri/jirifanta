@@ -24,15 +24,15 @@ export function Hero() {
           </div>
 
           <h1 className="animate-fade-up mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05]">
-            Sportovní masáže pro{" "}
-            <span className="text-gradient-gold">rychlejší regeneraci</span> a lepší výkon
+            Sportovní masáže v Brně pro{" "}
+            <span className="text-gradient-gold">regeneraci, výkon a prevenci přetížení</span>
           </h1>
 
           <p
             className="animate-fade-up mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl"
             style={{ animationDelay: "120ms" }}
           >
-            Pomáhám sportovcům i aktivním lidem vrátit tělu pohyb bez omezení.
+            Pomáhám sportovcům i aktivním lidem uvolnit přetížené svaly, zrychlit regeneraci a lépe zvládat tréninkovou zátěž. Vycházím ze 7 let masérské praxe a vlastní zkušenosti z profesionální cyklistiky v ASC Dukla Brno.
           </p>
 
           <div
@@ -40,17 +40,10 @@ export function Hero() {
             style={{ animationDelay: "240ms" }}
           >
             <a
-              href="https://wa.me/420733151249?text=Dobrý den, chtěl/a bych se objednat na sportovní masáž."
+              href="https://wa.me/420733151249"
               className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium shadow-[var(--shadow-glow)] hover:scale-[1.02] transition"
             >
-              Objednat termín přes Whatsapp
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
-            </a>
-            <a
-              href="#kontakt"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-medium shadow-[var(--shadow-glow)] hover:scale-[1.02] transition"
-            >
-              Objednat masáž
+              Objednat přes WhatsApp
               <ArrowRight size={18} className="group-hover:translate-x-1 transition" />
             </a>
             <a
@@ -58,13 +51,14 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur px-7 py-4 font-medium hover:bg-card transition"
             >
               <Phone size={18} />
-              Kontaktovat
+              Zavolat
             </a>
           </div>
 
           <dl className="animate-fade-up mt-16 grid grid-cols-3 gap-6 max-w-lg" style={{ animationDelay: "360ms" }}>
             {[
               { k: "7+", v: "let praxe" },
+              { k: "12", v: "let cyklistiky" },
               { k: "OH", v: "účastníci" },
             ].map((s) => (
               <div key={s.v}>

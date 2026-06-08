@@ -25,23 +25,21 @@ export function About() {
           </h2>
           <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              Jmenuji se <span className="text-foreground font-medium">Jiří Fanta</span> a již
-              více než 7 let působím jako sportovní masér vrcholových sportovců.
+              Jmenuji se Jiří Fanta a sport je součástí mého života odmala. Cyklistice jsem se věnoval 12 let na vrcholové úrovni, z toho 8 let profesionálně. Závodil jsem za ASC Dukla Brno a dobře vím, co znamená náročný trénink, únava, přetížení i potřeba kvalitní regenerace.
             </p>
             <p>
-              Měl jsem možnost spolupracovat s reprezentanty České republiky a sportovci
-              z armádního sportovního centra <span className="text-foreground">Dukla Brno</span>,
-              včetně účastníků olympijských her.
+              Po sportovní kariéře jsem se začal věnovat sportovním a regeneračním masážím. Masíruji už 7 let a nejvíce zkušeností mám se sportovci, především s cyklisty. Díky vlastní závodní minulosti dokážu lépe vnímat, co tělo po výkonu potřebuje a jak může masáž pomoct nejen regeneraci, ale i celkovému pocitu z pohybu.
             </p>
             <p>
-              Ve své práci propojuji zkušenosti ze sportovního prostředí s individuálním
-              přístupem ke každému klientovi.
-            </p>
-            <p>
-              Mým cílem není pouze krátkodobá úleva, ale dlouhodobě lepší funkce pohybového
-              aparátu, kvalitnější regenerace a podpora sportovního výkonu.
+              Mým cílem je, aby klient odcházel uvolněnější, lehčí a s pocitem skutečné úlevy. Kromě samotné masáže dbám i na příjemnou atmosféru — klidné prostředí, hudbu, kvalitní oleje a přirozenou komunikaci bez zbytečného tlaku.
             </p>
           </div>
+
+          <blockquote className="mt-8 relative pl-6 border-l-2 border-primary/40 italic text-foreground/90">
+            <p className="leading-relaxed">
+              „Díky vlastní zkušenosti z profesionální cyklistiky dobře vím, jak důležitá je regenerace. Masáž proto vnímám nejen jako uvolnění svalů, ale jako součást péče o tělo, výkon i dlouhodobé zdraví.“
+            </p>
+          </blockquote>
 
           <div className="mt-10 flex flex-wrap gap-3">
             {["Dukla Brno", "Reprezentace ČR", "Olympionici", "Individuální přístup"].map((t) => (
