@@ -8,7 +8,7 @@ const testimonials = [
     role: "Cyklista, hobby",
   },
   {
-    text: "Jiří mi pomohl zvládnout přípravu na maraton. Bez něj bych to nedal.",
+    text: "Jiří mi pomohl zvládnout přípravu na maraton. Bez něj bych to nedala.",
     author: "Petra S.",
     role: "Běžkyně",
   },
