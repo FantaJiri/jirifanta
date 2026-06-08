@@ -1,4 +1,4 @@
-import { Dumbbell, HeartPulse, Zap, RotateCcw } from "lucide-react";
+import { Dumbbell, HeartPulse, Zap, RotateCcw, Tag } from "lucide-react";
 
 const services = [
   {
@@ -20,6 +20,11 @@ const services = [
     icon: RotateCcw,
     title: "Masáž po výkonu",
     text: "Podpora regenerace a rychlejší návrat do tréninku.",
+  },
+  {
+    icon: Tag,
+    title: "Kinesiotaping",
+    text: "Doplňková aplikace tejpu pro podporu svalů, odlehčení přetížených oblastí a podporu regenerace při sportovní zátěži.",
   },
 ];
 

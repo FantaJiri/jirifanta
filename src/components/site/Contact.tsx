@@ -1,24 +1,18 @@
-import { useState } from "react";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import { toast } from "sonner";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import whatsappQr from "@/assets/whatsapp-qr.png";
 
+const PHONE = "+420733151249";
+const PHONE_DISPLAY = "+420 733 151 249";
+const EMAIL = "fantajiri@email.cz";
+const WHATSAPP_URL =
+  "https://wa.me/420733151249?text=Dobr%C3%BD%20den%2C%20cht%C4%9Bl%2Fa%20bych%20se%20objednat%20na%20sportovn%C3%AD%20mas%C3%A1%C5%BE.";
+
 export function Contact() {
-  const [loading, setLoading] = useState(false);
-
-  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    // Placeholder — propojte s e-mailem nebo backendem dle potřeby
-    setTimeout(() => {
-      setLoading(false);
-      toast.success("Zpráva byla odeslána. Ozvu se vám co nejdříve.");
-      (e.target as HTMLFormElement).reset();
-    }, 600);
-  };
-
   return (
-    <section id="kontakt" className="py-24 md:py-32 bg-card/30 border-t border-border">
+    <section
+      id="kontakt"
+      className="py-24 md:py-32 bg-card/30 border-t border-border"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20">
         <div className="reveal">
           <p className="text-xs uppercase tracking-[0.25em] text-primary">Kontakt</p>
@@ -31,24 +25,22 @@ export function Contact() {
           </p>
 
           <div className="mt-10 space-y-5">
-            <a href="tel:+420733151249" className="flex items-start gap-4 group">
-
+            <a href={`tel:${PHONE}`} className="flex items-start gap-4 group">
               <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary grid place-items-center group-hover:bg-primary group-hover:text-primary-foreground transition">
                 <Phone size={18} />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Telefon</p>
-                <p className="font-medium">+420 733 151 249</p>
+                <p className="font-medium">{PHONE_DISPLAY}</p>
               </div>
             </a>
-            <a href="mailto:fantajiri@email.cz" className="flex items-start gap-4 group">
-
+            <a href={`mailto:${EMAIL}`} className="flex items-start gap-4 group">
               <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary grid place-items-center group-hover:bg-primary group-hover:text-primary-foreground transition">
                 <Mail size={18} />
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">E-mail</p>
-                <p className="font-medium">fantajiri@email.cz</p>
+                <p className="font-medium break-all">{EMAIL}</p>
               </div>
             </a>
             <div className="flex items-start gap-4">
@@ -66,7 +58,9 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">Provozovna</p>
-                <p className="font-medium">Poliklinika Lesná, Halasovo náměstí 597/1, 638 00 Brno – Lesná</p>
+                <p className="font-medium">
+                  Poliklinika Lesná, Halasovo náměstí 597/1, 638 00 Brno – Lesná
+                </p>
               </div>
             </div>
           </div>
@@ -95,74 +89,48 @@ export function Contact() {
           </div>
         </div>
 
-        <form
-          onSubmit={onSubmit}
-          className="reveal rounded-3xl border border-border bg-card p-8 md:p-10 space-y-5"
-        >
-          <div className="grid sm:grid-cols-2 gap-5">
-            <Field label="Jméno" name="name" required />
-            <Field label="Telefon" name="phone" type="tel" />
-          </div>
-          <Field label="E-mail" name="email" type="email" required />
-          <div>
-            <label
-              htmlFor="contact-message"
-              className="text-xs uppercase tracking-wider text-muted-foreground"
+        <div className="reveal rounded-3xl border border-border bg-card p-8 md:p-10 flex flex-col">
+          <p className="text-xs uppercase tracking-[0.25em] text-primary">Objednání</p>
+          <h3 className="mt-3 text-2xl md:text-3xl font-bold leading-tight">
+            Nejrychleji se domluvíme přímo
+          </h3>
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            Vyberte si způsob, který vám vyhovuje. Ozvu se obvykle do několika hodin
+            a domluvíme termín, který bude sedět.
+          </p>
+
+          <div className="mt-8 space-y-3">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full inline-flex items-center justify-center gap-3 rounded-full bg-primary text-primary-foreground py-4 px-6 font-medium hover:opacity-90 transition"
             >
-              Zpráva
-            </label>
-            <textarea
-              id="contact-message"
-              name="message"
-              required
-              rows={5}
-              maxLength={1000}
-              className="mt-2 w-full rounded-xl bg-background border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition resize-none"
-              placeholder="Popište, co potřebujete…"
-            />
+              <MessageCircle size={18} />
+              Napsat na WhatsApp
+            </a>
+            <a
+              href={`tel:${PHONE}`}
+              className="w-full inline-flex items-center justify-center gap-3 rounded-full border border-border bg-background py-4 px-6 font-medium hover:bg-card transition"
+            >
+              <Phone size={18} />
+              Zavolat {PHONE_DISPLAY}
+            </a>
+            <a
+              href={`mailto:${EMAIL}`}
+              className="w-full inline-flex items-center justify-center gap-3 rounded-full border border-border bg-background py-4 px-6 font-medium hover:bg-card transition"
+            >
+              <Mail size={18} />
+              Poslat e-mail
+            </a>
           </div>
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground py-4 font-medium hover:opacity-90 transition disabled:opacity-60"
-          >
-            {loading ? "Odesílám…" : "Odeslat"}
-            <Send size={16} />
-          </button>
-        </form>
+
+          <p className="mt-8 text-xs text-muted-foreground leading-relaxed">
+            Reaguji obvykle v průběhu dne. Ve dnech, kdy ošetřuji klienty, může odpověď
+            chvíli trvat — děkuji za pochopení.
+          </p>
+        </div>
       </div>
     </section>
-  );
-}
-
-function Field({
-  label,
-  name,
-  type = "text",
-  required,
-}: {
-  label: string;
-  name: string;
-  type?: string;
-  required?: boolean;
-}) {
-  const id = `contact-${name}`;
-  return (
-    <div>
-      <label
-        htmlFor={id}
-        className="text-xs uppercase tracking-wider text-muted-foreground"
-      >
-        {label}
-      </label>
-      <input
-        id={id}
-        name={name}
-        type={type}
-        required={required}
-        maxLength={255}
-        className="mt-2 w-full rounded-xl bg-background border border-border px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
-      />
-    </div>
   );
 }
