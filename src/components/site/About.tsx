@@ -25,7 +25,7 @@ export function About() {
           </h2>
           <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              Jmenuji se Jiří Fanta a sport je součástí mého života odmala. Cyklistice jsem se věnoval 12 let na vrcholové úrovni, z toho 8 let profesionálně. Závodil jsem za ASC Dukla Brno a dobře vím, co znamená náročný trénink, únava, přetížení i potřeba kvalitní regenerace.
+              Jmenuji se Jiří Fanta a sport je součástí mého života odmala. Cyklistice jsem se věnoval 12 let na vrcholové úrovni, z toho 8 let profesionálně. Závodil jsem za ASO Dukla Brno a dobře vím, co znamená náročný trénink, únava, přetížení i potřeba kvalitní regenerace.
             </p>
             <p>
               Po sportovní kariéře jsem se začal věnovat sportovním a regeneračním masážím. Masíruji už 7 let a nejvíce zkušeností mám se sportovci, především s cyklisty. Díky vlastní závodní minulosti dokážu lépe vnímat, co tělo po výkonu potřebuje a jak může masáž pomoct nejen regeneraci, ale i celkovému pocitu z pohybu.
