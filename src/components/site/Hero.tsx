@@ -32,7 +32,7 @@ export function Hero() {
             className="animate-fade-up mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl"
             style={{ animationDelay: "120ms" }}
           >
-            Pomáhám sportovcům i aktivním lidem uvolnit přetížené svaly, zrychlit regeneraci a lépe zvládat tréninkovou zátěž. Vycházím ze 7 let masérské praxe a vlastní zkušenosti z profesionální cyklistiky v ASC Dukla Brno.
+            Pomáhám sportovcům i aktivním lidem uvolnit přetížené svaly, zrychlit regeneraci a lépe zvládat tréninkovou zátěž. Vycházím ze 7 let masérské praxe a vlastní zkušenosti z profesionální cyklistiky v ASO Dukla Brno.
           </p>
 
           <div
