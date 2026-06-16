@@ -8,7 +8,7 @@ export function About() {
           <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl blur-2xl" />
           <div className="relative overflow-hidden rounded-3xl border border-border">
             <img
-              src={portrait}
+              src={portrait.url}
               alt="Jiří Fanta — sportovní masér"
               width={1024}
               height={1024}
