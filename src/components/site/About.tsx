@@ -1,4 +1,4 @@
-import portrait from "@/assets/about-portrait.jpg";
+import portrait from "@/assets/jiri-fanta-portrait.jpg.asset.json";
 
 export function About() {
   return (
