@@ -1,4 +1,4 @@
-import portrait from "@/assets/jiri-fanta-portrait.jpg.asset.json";
+import jiriFantaPortrait from "@/assets/jiri-fanta-portrait.jpg";
 
 export function About() {
   return (
@@ -6,14 +6,14 @@ export function About() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="reveal relative">
           <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl blur-2xl" />
-          <div className="relative overflow-hidden rounded-3xl border border-border">
+          <div className="relative overflow-hidden rounded-3xl border border-border h-[400px] md:h-auto">
             <img
-              src={portrait.url}
-              alt="Jiří Fanta — sportovní masér"
+              src={jiriFantaPortrait}
+              alt="Jiří Fanta – sportovní masér"
               width={1024}
               height={1024}
               loading="lazy"
-              className="w-full h-auto object-cover"
+              className="w-full h-full md:h-auto object-cover object-center"
             />
           </div>
         </div>
