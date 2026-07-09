@@ -4,13 +4,13 @@ const items = [
   {
     title: "Sportovní / regenerační masáž",
     duration: "30 minut",
-    price: "600 Kč",
+    price: "550 Kč",
     icon: Clock,
   },
   {
     title: "Sportovní / regenerační masáž",
     duration: "60 minut",
-    price: "1 000 Kč",
+    price: "950 Kč",
     icon: Clock,
     highlight: true,
   },

@@ -13,7 +13,7 @@ export function About() {
               width={1024}
               height={1024}
               loading="lazy"
-              className="w-full h-full md:h-auto object-cover object-center"
+              className="w-full h-full md:h-auto object-cover object-top"
             />
           </div>
         </div>
