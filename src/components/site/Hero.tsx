@@ -35,6 +35,20 @@ export function Hero() {
             Pomáhám sportovcům i aktivním lidem uvolnit přetížené svaly, zrychlit regeneraci a lépe zvládat tréninkovou zátěž. Vycházím ze 7 let masérské praxe a vlastní zkušenosti z profesionální cyklistiky v ASO Dukla Brno.
           </p>
 
+          <ul
+            className="animate-fade-up mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-xs uppercase tracking-widest text-muted-foreground"
+            style={{ animationDelay: "180ms" }}
+          >
+            {["Sportovní masáže", "Regenerační masáže", "Relaxační masáže", "Kinesiotaping"].map((s, i) => (
+              <li key={s} className="flex items-center gap-3">
+                {i > 0 && <span className="h-1 w-1 rounded-full bg-primary/60" />}
+                <span>{s}</span>
+              </li>
+            ))}
+          </ul>
+
+
+
           <div
             className="animate-fade-up mt-10 flex flex-wrap gap-4"
             style={{ animationDelay: "240ms" }}

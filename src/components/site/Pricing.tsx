@@ -2,13 +2,13 @@ import { ArrowRight, Clock, Tag } from "lucide-react";
 
 const items = [
   {
-    title: "Sportovní / regenerační masáž",
+    title: "Sportovní / Relaxační masáž",
     duration: "30 minut",
     price: "550 Kč",
     icon: Clock,
   },
   {
-    title: "Sportovní / regenerační masáž",
+    title: "Sportovní / Relaxační masáž",
     duration: "60 minut",
     price: "950 Kč",
     icon: Clock,
@@ -21,6 +21,7 @@ const items = [
     icon: Tag,
   },
 ];
+
 
 export function Pricing() {
   return (
